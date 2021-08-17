@@ -12,7 +12,7 @@ function BlogDetail(props) {
         if (index !== -1) {
             setBlogDetail(arrBlogs[index])
         }
-    }, []);
+    }, [props.match.params.blogid]);
 
     return (
         <div className="container mt-5">
